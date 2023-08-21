@@ -1,0 +1,50 @@
+
+.page-heading {
+	text-align: center;
+	background-image: url(../image/digital-infra.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 230px 0px 150px 0px;
+	color: #fff;
+}
+
+.page-heading h1 {
+	text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+    color: #000;
+}
+
+.page-heading span {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
+}
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+.bg-hero {
+    
+    background-size: contain;
+}
+
+@media (max-width: 991.98px) {
+    .bg-hero {
+        background-size: cover;
+    }
+}
+
+.about-start,
+.about-end {
+   
+    background-size: contain;
+}

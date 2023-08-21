@@ -1,0 +1,233 @@
+.body {
+    --primary: #FFE468;
+    --secondary: #8CC641;
+    --light: #F2F2F2;
+    --dark: #403886;
+}
+
+.btn {
+    font-weight: 700;
+    transition: .5s;
+    background:none;
+    border:1px solid #FFFFFF ;
+}
+
+.btn:hover {
+    
+    box-shadow: 0 8px 6px -6px #555555;
+    background-color: #fff;
+    color: blue;
+}
+
+.btn .btn-secondary {
+    color: #FFFFFF;
+    background:none;
+    border:1px solid #FFFFFF ;
+
+    
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+@media (min-width: 992px) {
+    .navbar-dark .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: 0;
+        left: 50%;
+        background: var(--primary);
+        transition: .5s;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover::before,
+    .navbar-dark .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+}
+.page-head2 {
+	text-align: center;
+	background-image: url(../image/image/hh.jpg) !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 230px 0px 150px 0px;
+	color: #fff;
+    margin-top: 100px;
+   
+}
+
+.page-head2 h1 {
+	text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+    color: #ffffff !important;
+}
+
+.page-head2 span {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
+
+
+}
+
+@media (max-width: 991.98px) {
+    .bg-hero {
+        background-size: cover;
+    }
+}
+
+.about-start,
+.about-end {
+   
+    background-size: contain;
+}
+
+@media (min-width: 992px) {
+    .about-start {
+        position: relative;
+        margin-right: -90px;
+        z-index: 1;
+    }
+
+    .about-end {
+        position: relative;
+        margin-left: -90px;
+        z-index: 1;
+    }
+}
+
+.service-item,
+.contact-item {
+   
+    background-size: cover;
+    transition: .5s;
+}
+
+.service-item:hover,
+.contact-item:hover {
+    
+    background-size: cover;
+}
+
+.service-item .service-icon,
+.contact-item .contact-icon {
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    color: var(--secondary);
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+}
+
+.service-item .service-icon div,
+.contact-item .contact-icon div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    transition: .5s;
+}
+
+.service-item .service-icon i,
+.contact-item .contact-icon i {
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.service-item:hover .service-icon div,
+.contact-item:hover .contact-icon div {
+    background: var(--secondary);
+}
+
+.service-item:hover .service-icon i,
+.contact-item:hover .contact-icon i {
+    color: var(--primary);
+}
+
+.service-item a.btn {
+    position: relative;
+    bottom: -30px;
+    opacity: 0;
+}
+
+.service-item:hover a.btn {
+    bottom: 0;
+    opacity: 1;
+}
+
+.bg-quote {
+   
+    background-size: contain;
+}
+
+@media (max-width: 991.98px) {
+    .bg-quote {
+        background-size: cover;
+    }
+}
+.section-heading {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.section-heading h2 {
+	font-size: 36px;
+	font-weight: 600;
+	color: #1e1e1e;
+}
+
+.section-heading em {
+	font-style: normal;
+	color: #a4c639;
+}
+
+.section-heading span {
+	display: block;
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #666;
+	letter-spacing: 1px;
+}
+.container1-fluid{
+    color: #000;
+}
