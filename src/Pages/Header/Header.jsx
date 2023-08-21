@@ -10,53 +10,63 @@ import "../css/Header.css";
 import headerLog from "../image/mainlogo.png";
 import { Link } from "react-router-dom";
 
-
-
 export default function Header() {
   return (
     <>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       {/* ======= Top Bar ======= */}
       <section id="topbar" className="fixed-top d-flex align-items-center">
         <div className="container d-flex justify-content-center justify-content-md-between">
           <div className="contact-info d-flex align-items-center ">
             <i className="bi bi-envelope d-flex align-items-center ms-4">
-              <Link to="mailto:info@iykons.com" 
-              style={{ padding: '10px', display: 'inline-block' }}
-              >info@iykons.com</Link>
+              <Link
+                to="mailto:info@iykons.com"
+                style={{ padding: "10px", display: "inline-block" }}
+              >
+                info@iykons.com
+              </Link>
             </i>
 
             <i className="bi bi-phone d-flex align-items-center ms-4">
-              <Link to="tel:+44 20 3598 2904"
-              style={{ padding: '10px', display: 'inline-block' }}
-              > +44 20 3598 2904</Link>
+              <Link
+                to="tel:+44 20 3598 2904"
+                style={{ padding: "10px", display: "inline-block" }}
+              >
+                {" "}
+                +44 20 3598 2904
+              </Link>
             </i>
           </div>
 
-          <div className="social-links d-none d-md-flex" style={{ display: 'flex', gap: '10px' }}>
+          <div
+            className="social-links d-none d-md-flex"
+            style={{ display: "flex", gap: "10px" }}
+          >
             <Link
               to="https://www.tiktok.com/@iykons.uk?lang=en"
               className="twitter"
-              style={{ padding: '10px', display: 'inline-block' }}
+              style={{ padding: "10px", display: "inline-block" }}
             >
               <i className="bi bi-twitter" />
             </Link>
             <Link to="https://www.facebook.com/iykons/" className="facebook">
-              <i className="bi bi-facebook" 
-              style={{ padding: '10px', display: 'inline-block' }}/>
+              <i
+                className="bi bi-facebook"
+                style={{ padding: "10px", display: "inline-block" }}
+              />
             </Link>
             <Link
               to="https://www.instagram.com/iykon.uk/"
               className="instagram"
-              style={{ padding: '10px', display: 'inline-block' }}
+              style={{ padding: "10px", display: "inline-block" }}
             >
               <i className="bi bi-instagram" />
             </Link>
             <Link
               to="https://www.linkedin.com/company/iykons-ltd/"
               className="linkedin"
-              style={{ padding: '10px', display: 'inline-block' }}
+              style={{ padding: "10px", display: "inline-block" }}
             >
               <i className="bi bi-linkedin" />
             </Link>
@@ -90,7 +100,8 @@ export default function Header() {
                   About
                 </Link>
               </li>
-              <li>{/*}
+              <li>
+                {/*}
                 <Link to="#" className="nav-link scrollto" href="#">
                   Blog
 </Link>*/}
@@ -139,9 +150,6 @@ export default function Header() {
 
                   <li>
                     <Link to="/IYConnect">IYCONNECT</Link>
-                  </li>
-                  <li>
-                    <Link to="/Privacy">Privacy & Policy</Link>
                   </li>
                 </ul>
               </li>

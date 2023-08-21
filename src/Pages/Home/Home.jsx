@@ -17,35 +17,12 @@ import ourHistory from "../image/ourHisory.jpg";
 import "./Icons/css/ionicons.min.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-
+import ImageSlider from "../ImageSlider/ImageSlider";
 export default function Home() {
   return (
     <>
       <Header />
-      <section id="intro">
-        <div className="intro-container">
-          <div
-            id="introCarousel"
-            className="carousel  slide carousel-fade"
-            data-ride="carousel"
-          >
-            <ol className="carousel-indicators" />
-            <div className="carousel-inner" role="listbox">
-              <div
-                className="carousel-item active"
-                style={{ backgroundImage: { image1 } }}
-              >
-                <div className="carousel-container">
-                  <div className="carousel-content">
-                    <h1>IYKONS</h1>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ImageSlider />
       {/* #intro */}
       {/*==========================
 Facts Section
