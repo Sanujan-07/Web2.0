@@ -30,7 +30,7 @@ export default function ImageSlider() {
         {Silderdata.slides.map((item, idx) => {
           return (
             <img
-              src={item.src}
+              src={process.env.PUBLIC_URL + item.src}
               alt={item.alt}
               key={idx}
               className={slide === idx ? "slide" : "slide slide-hidden"}

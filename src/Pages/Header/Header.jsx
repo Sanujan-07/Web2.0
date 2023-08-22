@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/vendor/animate.css/animate.min.css";
 import "../assets/vendor/bootstrap/css/bootstrap.min.css";
 import "../assets/vendor/bootstrap-icons/bootstrap-icons.css";
@@ -10,7 +10,53 @@ import "../css/Header.css";
 import headerLog from "../image/mainlogo.png";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+const Header = () => {
+  const [isResponsive, setIsResponsive] = useState(false);
+  const [servicesMenuVisible, setServicesMenuVisible] = useState(false);
+  const [productMenuVisible, setProductMenuVisible] = useState(false);
+
+  const toggleResponsive = () => {
+    setIsResponsive(!isResponsive);
+  };
+
+  const toggleServicesMenu = () => {
+    setServicesMenuVisible(!servicesMenuVisible);
+  };
+
+  const toggleProductMenu = () => {
+    setProductMenuVisible(!productMenuVisible);
+  };
+
+  useEffect(() => {
+    const scrollFunction = () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        const navbar = document.getElementById("navbar");
+        const logo = document.getElementById("logo");
+        if (navbar && logo) {
+          navbar.style.padding = "30px 10px";
+          logo.style.fontSize = "25px";
+        }
+      } else {
+        const navbar = document.getElementById("navbar");
+        const logo = document.getElementById("logo");
+        if (navbar && logo) {
+          navbar.style.padding = "80px 10px";
+          logo.style.fontSize = "35px";
+        }
+      }
+    };
+
+    window.addEventListener("scroll", scrollFunction);
+
+    // Clean up the scroll event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", scrollFunction);
+    };
+  }, []);
+
   return (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,75 +66,59 @@ export default function Header() {
         <div className="container d-flex justify-content-center justify-content-md-between">
           <div className="contact-info d-flex align-items-center ">
             <i className="bi bi-envelope d-flex align-items-center ms-4">
-              <Link
-                to="mailto:info@iykons.com"
-                style={{ padding: "10px", display: "inline-block" }}
-              >
-                info@iykons.com
-              </Link>
+              <Link to="mailto:info@iykons.com">info@iykons.com</Link>
             </i>
 
             <i className="bi bi-phone d-flex align-items-center ms-4">
-              <Link
-                to="tel:+44 20 3598 2904"
-                style={{ padding: "10px", display: "inline-block" }}
-              >
-                {" "}
-                +44 20 3598 2904
-              </Link>
+              <Link to="tel:+44 20 3598 2904">+44 20 3598 2904</Link>
             </i>
           </div>
 
-          <div
-            className="social-links d-none d-md-flex"
-            style={{ display: "flex", gap: "10px" }}
-          >
-            <Link
-              to="https://www.tiktok.com/@iykons.uk?lang=en"
+          <div className="social-links d-none d-md-flex">
+            <a
+              href="https://twitter.com/jey_raj"
+              target="_blank"
               className="twitter"
-              style={{ padding: "10px", display: "inline-block" }}
             >
               <i className="bi bi-twitter" />
-            </Link>
-            <Link to="https://www.facebook.com/iykons/" className="facebook">
-              <i
-                className="bi bi-facebook"
-                style={{ padding: "10px", display: "inline-block" }}
-              />
-            </Link>
-            <Link
-              to="https://www.instagram.com/iykon.uk/"
-              className="instagram"
-              style={{ padding: "10px", display: "inline-block" }}
+            </a>
+            <a
+              href="https://www.facebook.com/iykons/"
+              target="_blank"
+              className="facebook"
             >
+              <i className="bi bi-facebook" />
+            </a>
+            <a href="https://www.instagram.com/iykon.uk/" className="instagram">
               <i className="bi bi-instagram" />
-            </Link>
-            <Link
-              to="https://www.linkedin.com/company/iykons-ltd/"
+            </a>
+            <a
+              href="https://www.linkedin.com/company/iykons-ltd/"
+              target="_blank"
               className="linkedin"
-              style={{ padding: "10px", display: "inline-block" }}
             >
               <i className="bi bi-linkedin" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
       {/* ======= Header ======= */}
-      <header id="header" className="fixed-top d-flex align-items-center">
+      <header
+        id="header"
+        className={`fixed-top d-flex align-items-center ${
+          isResponsive ? "responsive" : ""
+        }`}
+      >
         <div className="container d-flex align-items-center justify-content-between">
           <div className="logo">
-            {/*<h1>
-            <a href="#">
-              <span>IYKONS</span>
-            </a>
-  </h1>*/}
             <Link to="/">
               <img src={headerLog} alt="header logo" className="image" />
             </Link>
-            {/* Uncomment below if you prefer to use an image logo */}
-            {/* <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*/}
           </div>
-          <nav id="navbar" className="navbar">
+          <nav
+            id="navbar"
+            className={`navbar ${isResponsive ? "navbar-mobile" : ""}`}
+          >
             <ul>
               <li>
                 <Link to="/" className="nav-link scrollto ">
@@ -108,10 +138,10 @@ export default function Header() {
               </li>
 
               <li className="dropdown">
-                <Link to="#">
+                <Link to="#" onClick={toggleServicesMenu}>
                   <span>Services</span> <i className="bi bi-chevron-down" />
                 </Link>
-                <ul>
+                <ul className={servicesMenuVisible ? "active" : ""}>
                   <li>
                     <Link to="/AccountandFinance">Accounting & Finance</Link>
                   </li>
@@ -140,10 +170,10 @@ export default function Header() {
                 </ul>
               </li>
               <li className="dropdown">
-                <a href="#">
+                <Link to="#" onClick={toggleProductMenu}>
                   <span>Product</span> <i className="bi bi-chevron-down" />
-                </a>
-                <ul>
+                </Link>
+                <ul className={productMenuVisible ? "active" : ""}>
                   <li>
                     <Link to="/FinTech">FinTech</Link>
                   </li>
@@ -159,12 +189,15 @@ export default function Header() {
                 </Link>
               </li>
             </ul>
-            <i className="bi bi-list mobile-nav-toggle" />
+            <button className="mobile-nav-toggle" onClick={toggleResponsive}>
+              <i className={`bi ${isResponsive ? "bi-x" : "bi-list"}`}></i>
+            </button>
           </nav>
-          {/* .navbar */}
         </div>
       </header>
       {/* End Header */}
     </>
   );
-}
+};
+
+export default Header;

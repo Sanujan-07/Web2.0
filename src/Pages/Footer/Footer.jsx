@@ -33,27 +33,35 @@ export default function Footer() {
                   </p>
                   <div className="social-links mt-3">
                     <a
+                      target="_blank"
                       href="https://www.tiktok.com/@iykons.uk?lang=en"
                       className="twitter"
                     >
                       <i className="bx bxl-twitter" />
                     </a>
                     <a
+                      target="_blank"
                       href="https://www.facebook.com/iykons/"
                       className="facebook"
                     >
                       <i className="bx bxl-facebook" />
                     </a>
                     <a
+                      target="_blank"
                       href="https://www.instagram.com/iykon.uk/"
                       className="instagram"
                     >
                       <i className="bx bxl-instagram" />
                     </a>
-                    <a href="#" className="google-plus">
-                      <i className="bx bxl-skype" />
+                    <a
+                      target="_blank"
+                      href="https://www.tiktok.com/@iykons.uk?lang=en"
+                      className="google-plus"
+                    >
+                      <i className="bx bxl-tiktok" />
                     </a>
                     <a
+                      target="_blank"
                       href="https://www.linkedin.com/company/iykons-ltd/"
                       className="linkedin"
                     >

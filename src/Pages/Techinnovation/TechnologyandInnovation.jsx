@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/TechnologyandInnovation.css";
 import about1 from "../image/image/BSSS.jpg";
 import about2 from "../image/image/it_infrastructor.jpg";
-import about3 from "../image/image/Fintech.jpg";
+
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SendMessage from "../SendMessaage/SendMessage";
@@ -66,6 +66,7 @@ export default function TechnologyandInnovation() {
                 <div class="col-lg-6" style={{ minheight: "400px" }}>
                   <div class="position-relative h-100">
                     <img
+                      alt="Image 1"
                       class="position-absolute w-100 h-100"
                       src={about1}
                       style={{ objectFit: "cover" }}
@@ -77,6 +78,7 @@ export default function TechnologyandInnovation() {
                 <div class="col-lg-6" style={{ minheight: "400px" }}>
                   <div class="position-relative h-100">
                     <img
+                      alt="Image 2"
                       class="position-absolute w-100 h-100"
                       src={about2}
                       style={{ objectFit: "cover" }}
