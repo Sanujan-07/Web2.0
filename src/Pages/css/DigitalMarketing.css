@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css? family-Poppins:100, 200, 300, 400, 500, 600,708,880, 980');
 .page-head {
 	text-align: center;
-	background-image: url(../image/image/Digitalmarketing.jpg);
+	background-image: url(../image/DigitalMarketing.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -19,7 +19,7 @@
 	letter-spacing: 2px;
 	margin-bottom: 2px;
    margin-right: 10px;
-    color: #c5c5c5;
+    color: #ffffff;
 }
 
 .page-head span {

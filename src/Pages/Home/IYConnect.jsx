@@ -7,58 +7,12 @@ import "./Icons/font-awesome/css/font-awesome.min.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SendMessage from "../SendMessaage/SendMessage";
+import ImageSlider from "../ImageSlider/ImageSlider";
 export default function Home() {
   return (
     <>
       <Header />
-      <section id="intro">
-        <div className="intro-container">
-          <div
-            id="introCarousel"
-            className="carousel  slide carousel-fade"
-            data-ride="carousel"
-          >
-            <ol className="carousel-indicators" />
-            <div className="carousel-inner" role="listbox">
-              <div
-                className="carousel-item active"
-                style={{ backgroundImage: {} }}
-              >
-                <div className="carousel-container">
-                  <div className="carousel-content">
-                    <h1>IYCONNECT</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a
-              className="carousel-control-prev"
-              href="#introCarousel"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon "
-                aria-hidden="true"
-              />
-              <span className="sr-only">Previous</span>
-            </a>
-            <a
-              className="carousel-control-next"
-              href="#introCarousel"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon "
-                aria-hidden="true"
-              />
-              <span className="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
+      <h1 className="Iyconnect">IYCONNECT</h1>
       <section id="facts" className="wow fadeIn">
         <div className="container">
           <header className="section-header">
@@ -233,37 +187,31 @@ Services Section
               </div>
               <h4 className="title">
                 <a href="">TEAM MANAGEMENT</a>
-                <p>
-                  <strong>
-                    <br></br>
-                  </strong>
-                </p>
               </h4>
-              <p className="descriptionJ">
-                <ul>
-                  <li>
-                    View and optimize all the jobs going on across your team.
-                  </li>
-                  <li>
-                    Delegate work tasks and sub-tasks to the team so everyone
-                    knows their own responsibility.
-                  </li>
-                  <li>
-                    Real-time work-in-progress tracking – Track job progression,
-                    identify setbacks and ensure targets are met on time.
-                  </li>
-                  <li>
-                    A system-triggered notification through the dashboard and
-                    via email when new tasks are assigned to team members and
-                    remind the member about a missing and upcoming deadline.
-                  </li>
-                  <li>TSheets to track time against clients or jobs.</li>
-                  <li>
-                    Allocate resources, manage team efficiency, and achieve
-                    productivity.
-                  </li>
-                </ul>
-              </p>
+
+              <ul className="descriptionJ">
+                <li>
+                  View and optimize all the jobs going on across your team.
+                </li>
+                <li>
+                  Delegate work tasks and sub-tasks to the team so everyone
+                  knows their own responsibility.
+                </li>
+                <li>
+                  Real-time work-in-progress tracking – Track job progression,
+                  identify setbacks and ensure targets are met on time.
+                </li>
+                <li>
+                  A system-triggered notification through the dashboard and via
+                  email when new tasks are assigned to team members and remind
+                  the member about a missing and upcoming deadline.
+                </li>
+                <li>TSheets to track time against clients or jobs.</li>
+                <li>
+                  Allocate resources, manage team efficiency, and achieve
+                  productivity.
+                </li>
+              </ul>
             </div>
           </div>
 

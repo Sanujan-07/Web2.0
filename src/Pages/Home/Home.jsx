@@ -13,11 +13,12 @@ import "./Icons/css/ionicons.min.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import ImageSlider from "../ImageSlider/ImageSlider";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
       <Header />
-      <ImageSlider />
+      <ImageSlider title={"IYCONS"} />
       {/* #intro */}
       {/*==========================
 Facts Section
@@ -96,9 +97,7 @@ About Us Section
                 <i className="ion-ios-analytics-outline" />
               </div>
               <h4 className="title">
-                <a href="http://localhost:3000/AccountandFinance">
-                  Accounting & Finance
-                </a>
+                <Link to="/AccountandFinance">Accounting & Finance</Link>
               </h4>
               <p className="description"></p>
             </div>
@@ -110,9 +109,9 @@ About Us Section
                 <i className="ion-ios-bookmarks-outline" />
               </div>
               <h4 className="title">
-                <a href="http://localhost:3000/TechnologyandInnovation">
+                <Link to="/TechnologyandInnovation">
                   Technology & Innovation
-                </a>
+                </Link>
               </h4>
               <p className="description"></p>
             </div>
@@ -124,9 +123,7 @@ About Us Section
                 <i className="ion-ios-paper-outline" />
               </div>
               <h4 className="title">
-                <a href="http://localhost:3000/DigitalMarketing">
-                  Digital Marketing & Branding
-                </a>
+                <Link to="/DigitalMarketing">Digital Marketing & Branding</Link>
               </h4>
               <p className="description"></p>
             </div>
@@ -139,9 +136,9 @@ About Us Section
                 <i className="ion-ios-speedometer-outline" />
               </div>
               <h4 className="title">
-                <a href="http://localhost:3000/BusinessPersonalFinance">
+                <Link to="/BusinessPersonalFinance">
                   Business & Personal Finance
-                </a>
+                </Link>
               </h4>
               <p className="description"></p>
             </div>
@@ -154,9 +151,9 @@ About Us Section
                 <i className="ion-ios-people-outline" />
               </div>
               <h4 className="title">
-                <a href="http://localhost:3000/BusinessSupport">
+                <Link to="/BusinessSupport">
                   Business Support & Consultancy
-                </a>
+                </Link>
               </h4>
               <p className="description"></p>
             </div>
@@ -185,7 +182,7 @@ About Us Section
                   </div>
                 </div>
                 <h2 className="title">
-                  <a href="http://localhost:3000/Fantach">IYKONS & Fintech </a>
+                  <Link to="/Fantach">IYKONS Fintech </Link>
                 </h2>
                 <p>
                   We create new or improve existing financial solutions for our
@@ -205,7 +202,7 @@ About Us Section
                   </div>
                 </div>
                 <h2 className="title">
-                  <a href="http://localhost:3000/Iykonnect">IYCONNECT</a>
+                  <Link to="/Iykonnect">IYCONNECT</Link>
                 </h2>
                 <p>
                   IYCONNECT is a collaborative practice management platform to

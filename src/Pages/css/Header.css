@@ -46,7 +46,7 @@
 
 #topbar .social-links a:hover {
   color: #01b1d7;
-  padding: 5px;
+ 
 }
 
 #topbar .social-links a:first-child {
@@ -89,8 +89,8 @@
 #header .logo img {
   padding: 0;
   margin: 0;
-  width: 90px;
-  height: 100px;
+  width: 150px;
+  height: 60px;
 }
 
 /* Navbar */
@@ -157,7 +157,7 @@
   padding: 10px 0;
   z-index: 99;
   opacity: 0;
-  visibility: visible;
+  visibility: hidden;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
@@ -204,7 +204,7 @@
 }
 
 /* Media queries for different devices */
-@media (max-width: 766px) {
+@media (max-width: 899px) {
   /* Navbar sub-dropdown positioning for small screens */
   .navbar .dropdown .dropdown ul {
     left: auto;
@@ -229,7 +229,7 @@
   }
 }
 
-@media (max-width: 1336px) {
+@media (max-width: 900px) {
   .navbar ul {
     display: none;
   }
@@ -244,6 +244,7 @@
     background: none;
   }
   .navbar .dropdown ul li {
+    position: relative;
     min-width: auto;
     margin: 0;
     padding: 0;
@@ -269,7 +270,7 @@
   color: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 899px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -392,4 +393,34 @@
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+}
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+/* Media Query for Screens Up To 768px */
+@media (max-width: 768px) {
+  /* Navbar sub-dropdown positioning for smaller screens */
+  .navbar .dropdown .dropdown ul {
+    position: static;
+    display: none;
+    margin: 10px 20px;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+  }
+
+  /* Display second-level submenu on hover for smaller screens */
+  .navbar .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: visible;
+  }
+
+  /* Display top-level submenu for smaller screens */
+  .navbar .dropdown ul {
+    visibility: visible;
+  }
 }

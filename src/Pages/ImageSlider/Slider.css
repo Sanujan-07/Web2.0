@@ -57,14 +57,9 @@
     margin: 0 0.2rem;
     cursor: pointer;
   }
-  
   .indicator-inactive {
     background-color: grey;
   }
-
-   
-
-
   #intro .carousel-container {
     display: flex;
     justify-content: center;
@@ -108,12 +103,15 @@
   }
   
   /* Media query for mobile devices */
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     #intro h1 {
       font-size: 100px; /* Adjust font size for mobile */
-      margin-bottom: 30px; /* Adjust margin for mobile */
+       /* Adjust margin for mobile */
     }
-  
+  .slide{
+    width : 768px !important ;
+    height: 500px ;
+  }
    
   }
   /* Media query for tablet devices */

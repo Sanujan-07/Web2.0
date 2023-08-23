@@ -55,17 +55,17 @@ export default function Footer() {
                     </a>
                     <a
                       target="_blank"
-                      href="https://www.tiktok.com/@iykons.uk?lang=en"
-                      className="google-plus"
-                    >
-                      <i className="bx bxl-tiktok" />
-                    </a>
-                    <a
-                      target="_blank"
                       href="https://www.linkedin.com/company/iykons-ltd/"
                       className="linkedin"
                     >
                       <i className="bx bxl-linkedin" />
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://www.tiktok.com/@iykons.uk?lang=en"
+                      className="google-plus"
+                    >
+                      <i className="bx bxl-tiktok" />
                     </a>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <Link to="/TechnologyandInnovation">Services</Link>
+                    <Link to="/">Services</Link>
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
@@ -91,7 +91,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
-                    <Link to="/Contactus">Contactus</Link>
+                    <Link to="/Contactus">Contact us</Link>
                   </li>
                 </ul>
               </div>
@@ -150,7 +150,7 @@ export default function Footer() {
             </strong>{" "}
             <div>
               {" "}
-              <Link to="/Privacy">Privacy/Policy</Link>
+              <Link to="/Privacy">Privacy Policy</Link>
             </div>
           </div>
           <div className="credits">

@@ -7,7 +7,7 @@ import "../assets/vendor/glightbox/css/glightbox.min.css";
 import "../assets/vendor/remixicon/remixicon.css";
 import "../assets/vendor/swiper/swiper-bundle.min.css";
 import "../css/Header.css";
-import headerLog from "../image/mainlogo.png";
+import headerLog from "../image/Logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -89,7 +89,11 @@ const Header = () => {
             >
               <i className="bi bi-facebook" />
             </a>
-            <a href="https://www.instagram.com/iykon.uk/" className="instagram">
+            <a
+              href="https://www.instagram.com/iykon.uk/"
+              className="instagram"
+              target="_blank"
+            >
               <i className="bi bi-instagram" />
             </a>
             <a
@@ -98,6 +102,13 @@ const Header = () => {
               className="linkedin"
             >
               <i className="bi bi-linkedin" />
+            </a>
+            <a
+              href="https://www.tiktok.com/@iykons.uk?lang=en"
+              target="_blank"
+              className="tiktok"
+            >
+              <i className="bi bi-tiktok" />
             </a>
           </div>
         </div>
@@ -127,7 +138,7 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/Aboutus" className="nav-link scrollto">
-                  About
+                  About us
                 </Link>
               </li>
               <li>

@@ -2,9 +2,9 @@
 
 /* Sections */
 .section {
-  padding-top: 4rem;
+  
   padding-bottom: 4rem;
-  margin-top: 100px;
+ 
   font-size: 18px;
   text-align: left!important;
 }
@@ -16,7 +16,10 @@
   }
 }
 
-
+.section .Iyconnect{
+ 
+  text-align: center;
+}
 
 /* Container Breakpoints */
 @media (min-width: 576px) {
@@ -148,7 +151,7 @@
 }
 
 /* Article Headings */
-.article h1,
+
 .article .h1,
 .article h2,
 .article .h2,

@@ -14,9 +14,24 @@ export default function Contactus() {
               <div className="info-item  d-flex flex-column justify-content-center align-items-center">
                 <i className="bi bi-map"></i>
                 <h3>Our Address</h3>
-                <p>
-                  14, Elm Road, Chessington, Surrey, KT9 1AW, United Kingdom.
-                </p>
+                <ol>
+                  <li>
+                    <p>
+                      14, Elm Road, Chessington, Surrey, KT9 1AW, United
+                      Kingdom.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      No 138, II Floor, Ameen Manor, Nungambakkam High Road,
+                      <br />
+                      Nungambakkam, Chennai – 600034.
+                    </p>
+                  </li>
+                  <li>
+                    <p>PO box 529, Wentworthville, NSW 2145, Australia.</p>
+                  </li>
+                </ol>
               </div>
             </div>
 
@@ -24,6 +39,8 @@ export default function Contactus() {
               <div className="info-item d-flex flex-column justify-content-center align-items-center">
                 <i className="bi bi-envelope"></i>
                 <h3>Email Us</h3>
+                <p>info@iykons.com</p>
+                <p>info@iykons.com</p>
                 <p>info@iykons.com</p>
               </div>
             </div>
@@ -33,6 +50,8 @@ export default function Contactus() {
                 <i className="bi bi-telephone"></i>
                 <h3>Call Us</h3>
                 <p>+442035982904</p>
+                <p>+91 9840375853</p>
+                <p>+61 412691100</p>
               </div>
             </div>
           </div>

@@ -12,30 +12,7 @@ export default function BusinesSupportConsultation() {
   return (
     <>
       <Header />
-      <section id="intro">
-        <div className="intro-container">
-          <div
-            id="introCarousel"
-            className="carousel  slide carousel-fade"
-            data-ride="carousel"
-          >
-            <ol className="carousel-indicators" />
-            <div className="carousel-inner" role="listbox">
-              <div
-                className="carousel-item active"
-                style={{ backgroundImage: {} }}
-              >
-                <div className="carousel-container">
-                  <div className="carousel-content">
-                    <h2>Business Support and Consultation</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <h1 className="Iyconnect">BusinesSupportConsultation</h1>
       <section id="facts" className="wow fadeIn">
         <div className="container">
           <header className="section-header">
@@ -193,20 +170,6 @@ Services Section
                 noticeable reduction in your operational costs due to
                 outsourcing.
               </p>
-            </div>
-          </div>
-
-          <div className="row">
-            <div
-              className="col-lg-4 col-md-6 box wow bounceInUp"
-              data-wow-duration="1.4s"
-            >
-              <div className="icon">
-                <i className="" />
-                <p>
-                  <h6>RISE ABOVE WITH IYCONNECT!</h6>
-                </p>
-              </div>
             </div>
           </div>
         </div>

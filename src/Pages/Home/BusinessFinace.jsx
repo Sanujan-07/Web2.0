@@ -12,30 +12,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <section id="intro">
-        <div className="intro-container">
-          <div
-            id="introCarousel"
-            className="carousel  slide carousel-fade"
-            data-ride="carousel"
-          >
-            <ol className="carousel-indicators" />
-            <div className="carousel-inner" role="listbox">
-              <div
-                className="carousel-item active"
-                style={{ backgroundImage: {} }}
-              >
-                <div className="carousel-container">
-                  <div className="carousel-content">
-                    <h2>Business And Personal Finance</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <h1 className="Iyconnect">Business & Personal Finance</h1>
       <section id="facts" className="wow fadeIn">
         <div className="container">
           <header className="section-header">
