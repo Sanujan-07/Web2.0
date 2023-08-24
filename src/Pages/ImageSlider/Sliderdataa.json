@@ -1,13 +1,6 @@
 {
   "slides": [
-    {
-      "src": "./SliderImage/A.jpg",
-      "alt": "Image 1 for carousel"
-    },
-    {
-      "src": "./SliderImage/B.jpg",
-      "alt": "Image 2 for carousel"
-    },
+  
     {
       "src": "./SliderImage/C.jpg",
       "alt": "Image 3 for carousel"

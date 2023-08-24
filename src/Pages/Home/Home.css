@@ -16,7 +16,7 @@
 #servicesj {
   padding: 60px 0;
   background-color: #d8d8d8;
-  text-align: left !important;
+ 
 }
 
 
@@ -37,37 +37,15 @@
 .box:not(:last-child) {
   margin-right: 20px;
 }
-
-.icon {
-  font-size: 48px;
-  color: #070044;
-}
-
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.title a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.title a:hover {
-  color: #24005e;
-}
-
 .description {
   font-size: 16px;
   color: #888;
   margin-top: 10px;
 }
 
-.descriptionj {
+#servicesj .descriptionj {
   font-size: 16px;
-  color: #888;
+  color: #b31616;
   margin-top: 10px;
   text-align: left !important;
 }
@@ -247,18 +225,14 @@
 #about .about-col .icon {
   width: 64px;
   height: 64px;
-  justify-content: center;
-  margin-bottom: 5px;
-  text-align: center;
+  border-radius: 50%;
   position: sticky;
   background-color: #18d26e;
-  border-radius: 50%;
-  align-items: center;
   border: 4px solid #fff;
   left: calc(50% - 32px);
-
   transition: 0.3s;
   transform: translateY(0);
+  align-items: center;
 }
 
 #about .about-col:hover .icon {
@@ -266,14 +240,19 @@
   transform: translateY(-8px);
 }
 
+
+   
 #about .about-col i {
-  font-size: 36px;
-  line-height: 1;
+  
+  padding-left: 10px;
+  padding-bottom: 15px;
+  font-size: 30px;
   color: #fff;
   transition: 0.3s;
 }
 
 #about .about-col:hover i {
+  
   color: #18d26e;
 }
 
@@ -315,7 +294,7 @@
 .text-content h1,
 .text-content h6,
 .text-content p,
-.text-content ul {
+.text-content{
   margin: 0;
   padding: 0;
 }
@@ -348,11 +327,13 @@
   }
 
   .text-content {
-    margin-bottom: 20px; /* Add margin to separate from the image */
+    margin-bottom: 20px;
+    text-align: center;/* Add margin to separate from the image */
   }
 
   .image-content img {
-    max-height: 300px; /* Adjust this value as needed */
+    max-height: 300px;
+    align-items: center;
   }
 }
 
@@ -440,15 +421,11 @@
   transform: translateY(-5px);
 }
 
-.icon {
-  font-size: 48px;
-  color: #009af3;
-}
-
 .title {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 35px;
+  padding-top: 10px;
 }
 
 .title a {
@@ -530,6 +507,7 @@
   text-align: center;
 }
  
+
   
  
 

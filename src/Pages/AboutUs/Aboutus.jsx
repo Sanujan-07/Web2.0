@@ -10,16 +10,20 @@ export default function Aboutus() {
   return (
     <>
       <Header />
-      <main id="main">
-        <div class="breadcrumbs d-flex align-items-center">
-          <div
-            class="container position-relative d-flex flex-column align-items-center"
-            data-aos="fade"
-          >
-            <h2>About Us</h2>
+
+      <section className="imagerow">
+        <div class="page-head3 header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1>About us</h1>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
+      <main id="main">
         {/*set one */}
 
         <section id="about" class="about mt-5">
@@ -69,9 +73,9 @@ export default function Aboutus() {
 
         <div class="row mt-5 hi">
           <div class="d-md-flex post-entry-2 half">
-            <a href="#" class="me-4 thumbnail">
+            <div class="me-4 thumbnail">
               <img src={myImage1} alt="" class="img-fluid" />
-            </a>
+            </div>
             <div class="ps-md-5 mt-4 mt-md-0">
               <h2 class="pt-5 display-4">Company History</h2>
               <p>

@@ -1,14 +1,13 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Home.css";
-import "./Icons/font-awesome/css/font-awesome.min.css";
-
-import "./Icons/css/ionicons.min.css";
+import "../Home/Home.css";
+import "../Home/Icons/font-awesome/css/font-awesome.min.css";
+import "../Home/Icons/css/ionicons.min.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SendMessage from "../SendMessaage/SendMessage";
-export default function Home() {
+export default function BusinessPersonalFinance() {
   return (
     <>
       <Header />
@@ -52,11 +51,6 @@ Services Section
 
       <section id="servicesj">
         <div className="container">
-          <header className="section-header wow fadeInUp">
-            <h4></h4>
-            <br />
-          </header>
-
           {/*oneset */}
 
           <div className="row">
@@ -67,9 +61,7 @@ Services Section
               <div className="icon">
                 <i className="ion-ios-paper-outline" />
               </div>
-              <h4 className="title">
-                <a href=""></a>
-              </h4>
+
               <p className="descriptionJ">
                 <p>
                   <strong>
@@ -130,20 +122,6 @@ Services Section
           </div>
 
           {/*oneset */}
-
-          <div className="row">
-            <div
-              className="col-lg-4 col-md-6 box wow bounceInUp"
-              data-wow-duration="1.4s"
-            >
-              <div className="icon">
-                <i className="" />
-                <p>
-                  <h6>RISE ABOVE WITH IYCONNECT!</h6>
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       <SendMessage />

@@ -61,17 +61,19 @@
    justify-content: center; 
    align-items: center;
    Flex-wrap: wrap; 
-   gap: 100px 50px;
-   padding: 100px 50px;
+   gap: 100px 50px !important;
+   padding: 50px 50px !important;
 }
 .container1 .card
 {
+   top: 50px;
+   bottom: 10px;
    position: relative;
    display: flex;
    justify-content: center;
    align-items: flex-start;
-   width: 450px;
-   height: 450px;
+   width: 350px !important;
+   height: 450px !important;
    background: #fff;
    border-radius: 9px;
    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
@@ -79,8 +81,9 @@
 
 }
 
+
 .container1 .card:hover{
-   height: 400;
+   height: 400px; ;
 }
 
 
@@ -88,8 +91,8 @@
    align-self: center;
    position: absolute;
    top: 20px;
-   width: 300px;
-   height: 220px;
+   width: 250px !important;
+   height: 220px !important;
    background: #333;
    border-radius: 12px;
    overflow: hidden;
@@ -112,7 +115,7 @@
 }
 .container1 .card .content{
    position: absolute;
-   top: 320px;
+   top: 280px ;
    width: 100%;
    height: 30px;
    padding: 0 30px;
@@ -121,8 +124,8 @@
    transition: 0.5s;
 }
 .container1 .card:hover .content{
-   top:130px;
-   height: 320px;
+   top:130px ;
+   height: 250px;
 
 }
 .container1 .card .content h2{
@@ -131,7 +134,8 @@
    color:#106EEA;
 }
 .container1 .card .content p{
-
+   top:15px;
    color: #333;
    font-size: 1.05em;
+
 }

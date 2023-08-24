@@ -4,6 +4,7 @@
   color: #444444;
 }
 
+
 a {
   color: #01b1d7;
   text-decoration: none;
@@ -24,9 +25,39 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+.page-head3 {
 
+	text-align: center;
+	background-image: url(../image/aboutus.png) ;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 230px 0px 150px 0px;
+	color: #fff;
+    margin-top: 120px;
+   
+}
+
+.page-head3 h1 {
+	text-transform: capitalize;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 18px;
+    color: #ffffff !important;
+}
+
+.page-head3 span {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
+
+
+}
 .about {
-  margin-top: 20px;
+  margin-top:0px;
 }
 .about h2 {
   font-size: 48px;
@@ -114,4 +145,7 @@ h6 {
   .custom-border {
     border: none !important;
   }
+}
+.img-fluid {
+  margin-left: 20px; /* Adjust the value as needed */
 }

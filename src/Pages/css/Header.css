@@ -138,7 +138,7 @@
   background-color: #fff; /* You can customize the submenu appearance here */
 }
 
-.navbar ul li.active ul {
+.navbar ul li .active ul {
   display: block;
 }
 
@@ -205,30 +205,36 @@
 }
 
 /* Media queries for different devices */
-@media (max-width: 899px) {
-  /* Navbar sub-dropdown positioning for small screens */
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  /* Navbar sub-dropdown positioning for smaller screens */
   .navbar .dropdown .dropdown ul {
-    left: auto;
-    right: 100%;
-    top: 0;
+    position: static;
+    display: none;
+    margin: 10px 20px;
+    padding: 10px 0;
+    z-index: 99;
     opacity: 1;
     visibility: visible;
     background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
   }
 
+  /* Display second-level submenu on hover for smaller screens */
   .navbar .dropdown .dropdown:hover > ul {
-    left: auto;
-    right: 100%;
-    top: 0;
     opacity: 1;
+    top: 0;
+    left: calc(100% - 30px);
     visibility: visible;
-    background: #fff;
   }
 
+  /* Display top-level submenu for smaller screens */
   .navbar .dropdown ul {
     visibility: visible;
   }
 }
+
 
 @media (max-width: 900px) {
   .navbar ul {

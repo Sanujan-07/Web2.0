@@ -81,10 +81,10 @@ export default function Footer() {
                     <i className="bx bx-chevron-right" />{" "}
                     <Link to="/Aboutus">About us</Link>
                   </li>
-                  <li>
+                  {/*  <li>
                     <i className="bx bx-chevron-right" />{" "}
                     <Link to="/">Services</Link>
-                  </li>
+                  </li>*/}
                   <li>
                     <i className="bx bx-chevron-right" />{" "}
                     <Link to="#">Blog</Link>

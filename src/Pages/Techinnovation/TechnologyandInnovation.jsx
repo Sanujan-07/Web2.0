@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/TechnologyandInnovation.css";
-import about1 from "../image/image/BSSS.jpg";
-import about2 from "../image/image/it_infrastructor.jpg";
+import about1 from "../image/image/Tech1.png";
+import about2 from "../image/image/Tech2.png";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -77,8 +77,10 @@ export default function TechnologyandInnovation() {
               Our deep expertise and breadth of experience assure on-time
               delivery of next-generation fintech products.
             </p>
-            <Link to="/FinTech">
-              <button class="card1-btn1">Read More..</button>
+            <Link to="/Fintech">
+              <button class="card1-btn1">
+                Learn More about IYKONS Fintech
+              </button>
             </Link>
           </div>
         </div>

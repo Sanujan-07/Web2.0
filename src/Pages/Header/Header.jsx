@@ -186,11 +186,10 @@ const Header = () => {
                 </Link>
                 <ul className={productMenuVisible ? "active" : ""}>
                   <li>
-                    <Link to="/FinTech">FinTech</Link>
-                  </li>
-
-                  <li>
                     <Link to="/IYConnect">IYCONNECT</Link>
+                  </li>
+                  <li>
+                    <Link to="/Fintech">IYKONS Fintech</Link>
                   </li>
                 </ul>
               </li>

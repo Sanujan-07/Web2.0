@@ -9,55 +9,9 @@ export default function Contactus() {
       <Header />
       <section id="contact" className="contact">
         <div className="container3" data-aos="fade-up" data-aos-delay="100">
-          <div className="row gy-4">
+          <div className="row gy-4 mt-3">
             <div className="col-lg-6">
-              <div className="info-item  d-flex flex-column justify-content-center align-items-center">
-                <i className="bi bi-map"></i>
-                <h3>Our Address</h3>
-                <ol>
-                  <li>
-                    <p>
-                      14, Elm Road, Chessington, Surrey, KT9 1AW, United
-                      Kingdom.
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      No 138, II Floor, Ameen Manor, Nungambakkam High Road,
-                      <br />
-                      Nungambakkam, Chennai – 600034.
-                    </p>
-                  </li>
-                  <li>
-                    <p>PO box 529, Wentworthville, NSW 2145, Australia.</p>
-                  </li>
-                </ol>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6">
-              <div className="info-item d-flex flex-column justify-content-center align-items-center">
-                <i className="bi bi-envelope"></i>
-                <h3>Email Us</h3>
-                <p>info@iykons.com</p>
-                <p>info@iykons.com</p>
-                <p>info@iykons.com</p>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6">
-              <div className="info-item  d-flex flex-column justify-content-center align-items-center">
-                <i className="bi bi-telephone"></i>
-                <h3>Call Us</h3>
-                <p>+442035982904</p>
-                <p>+91 9840375853</p>
-                <p>+61 412691100</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="row gy-4 mt-1">
-            <div className="col-lg-6">
+              {/*London */}
               <iframe
                 src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=14,%20Elm%20Road,%20Chessington,%20Surrey,%20KT9%201AW,%20United%20Kingdom.+(IYKONS)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                 frameBorder="0"
@@ -65,8 +19,38 @@ export default function Contactus() {
                 allowFullScreen
               ></iframe>
             </div>
-
             <div className="col-lg-6">
+              {/*India */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.702577427123!2d80.2500644!3d13.0545941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526747401de1a5%3A0x836a8cd352fbd5c2!2sIykons%20Business%20Services%20India%20Private%20Limited!5e0!3m2!1sen!2slk!4v1692883023834!5m2!1sen!2slk"
+                style={{ border: 0, width: "100%", height: "384px" }}
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div className="row gy-4 mt-1">
+            <div className="col-lg-6">
+              {/*Australia */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.519052599945!2d151.10937877443604!3d-33.87628366024956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bb526a150069%3A0x32a3bbe2655fc652!2sIykons%20Australia!5e0!3m2!1sen!2slk!4v1692883452597!5m2!1sen!2slk"
+                style={{ border: 0, width: "100%", height: "384px" }}
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div className="col-lg-6">
+              {/*Sri Lanka */}
+              <iframe
+                src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=14,%20Elm%20Road,%20Chessington,%20Surrey,%20KT9%201AW,%20United%20Kingdom.+(IYKONS)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                frameBorder="0"
+                style={{ border: 0, width: "100%", height: "384px" }}
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div className="row gt-4 mt-3">
+            <h3>Contact us</h3>
+            <div className="col-lg-12">
               <form
                 action="forms/contact.php"
                 method="post"

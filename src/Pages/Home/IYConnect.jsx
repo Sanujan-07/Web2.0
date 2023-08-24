@@ -1,12 +1,13 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Home.css";
+import "./Iyconnect.css";
 import "./Icons/font-awesome/css/font-awesome.min.css";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SendMessage from "../SendMessaage/SendMessage";
+
 import ImageSlider from "../ImageSlider/ImageSlider";
 export default function Home() {
   return (
@@ -52,11 +53,6 @@ Services Section
 
       <section id="services">
         <div className="container">
-          <header className="section-header wow fadeInUp">
-            <h4></h4>
-            <br />
-          </header>
-
           {/*oneset */}
 
           <div className="row">
@@ -170,13 +166,6 @@ Services Section
 
       <section id="servicesj">
         <div className="container">
-          <header className="section-header wow fadeInUp">
-            <h4></h4>
-            <br />
-          </header>
-
-          {/*oneset */}
-
           <div className="row">
             <div
               className="col-lg-4 col-md-6 box wow bounceInUp"

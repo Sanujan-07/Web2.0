@@ -30,7 +30,7 @@ Facts Section
               <div className="text-content">
                 <h1>Welcome to IYKONS</h1>
                 <h6>
-                  <p className="sanu">
+                  <p>
                     {/* Your paragraph content */}
                     <p>
                       IYKONS offers complete financial, IT, and business support
@@ -176,30 +176,7 @@ About Us Section
             <div className="col-md-6 wow fadeInUp">
               <div className="about-col">
                 <div className="img">
-                  <img src={aboutmisson} alt="" className="img-fluid" />
-                  <div className="icon">
-                    <i className="ion-ios-speedometer-outline" />
-                  </div>
-                </div>
-                <h2 className="title">
-                  <Link to="/Fantach">IYKONS Fintech </Link>
-                </h2>
-                <p>
-                  We create new or improve existing financial solutions for our
-                  customers based on our nearly 20 years of experience in
-                  banking and financial software development. We are prepared to
-                  do market research and provide an effective fintech solution
-                  for your company for the right financial management.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div className="about-col">
-                <div className="img">
                   <img src={aboutplan} alt="" className="img-fluid" />
-                  <div className="icon">
-                    <i className="ion-ios-list-outline" />
-                  </div>
                 </div>
                 <h2 className="title">
                   <Link to="/Iykonnect">IYCONNECT</Link>
@@ -211,6 +188,23 @@ About Us Section
                   transformation across the entire practice, allowing any firm
                   to maximize efficiencies, streamline processes and optimize
                   the scale.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div className="about-col">
+                <div className="img">
+                  <img src={aboutmisson} alt="" className="img-fluid" />
+                </div>
+                <h2 className="title">
+                  <Link to="/Fantach">IYKONS Fintech </Link>
+                </h2>
+                <p>
+                  We create new or improve existing financial solutions for our
+                  customers based on our nearly 20 years of experience in
+                  banking and financial software development. We are prepared to
+                  do market research and provide an effective fintech solution
+                  for your company for the right financial management.
                 </p>
               </div>
             </div>

@@ -1,31 +1,35 @@
-@import url('https://fonts.googleapis.com/css? family-Poppins:100, 200, 300, 400, 500, 600,708,880, 980');
-.page-head1 {
+
+.page-head4{
 	text-align: center;
-	background-image: url(../image/image/Account.jpg) ;
+	background-image: url(../image/BSC.png) !important ;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 230px 0px 150px 0px;
-	color: #fff;
+	padding: 190px 0px 150px 0px;
+	color: #d4d4d4;
    margin-top: 100px;
+   
 }
 
-.page-head1 h1 {
+.page-head4 h1 {
+   
 	text-transform: capitalize;
 	font-size: 36px;
 	font-weight: 700;
 	letter-spacing: 2px;
-	margin-bottom: 18px;
+	margin-bottom: 2px;
+   margin-right: 10px;
     color: #ffffff;
 }
 
-.page-head1 span {
+.page-head4 span {
 	font-size: 15px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #fff;
 	display: block;
 }
+
 
 .bg-hero {
     
@@ -115,7 +119,7 @@
    transition: 0.5s;
 }
 .container1 .card:hover .content{
-   top:130px !important;
+   top:130px ;
    height: 250px;
 
 }

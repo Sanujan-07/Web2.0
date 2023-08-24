@@ -1,0 +1,162 @@
+   /* image slider*/
+   .Iyconnect{
+    margin-top: 130px;
+    margin-left: 50px;
+    
+    text-align: center;
+  }  
+  
+#facts {
+    background: url(./img/facts-bg.jpg) center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px 0 0 0;
+    position: relative;
+  }
+  
+  
+  
+  #facts::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.88);
+    z-index: 9;
+  }
+  
+  #facts .container {
+    position: relative;
+    z-index: 10;
+  }
+  
+  #facts .counters span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    display: block;
+    color: #18d26e;
+  }
+  
+  
+  
+  #facts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #00000070 !important;
+    
+  }
+  
+  #facts .facts-img {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+    .text-content h1,
+  .text-content h6,
+  .text-content p,
+  .text-content{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+    #skills {
+    padding: 60px 0;
+  }
+  
+  #skills .progress {
+    height: 35px;
+    margin-bottom: 10px;
+  }
+  
+  #skills .progress .skill {
+    font-family: "Open Sans", sans-serif;
+    line-height: 35px;
+    padding: 0;
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+  }
+  
+  #skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+    margin: 0 20px 0 0;
+  }
+  
+  #skills .progress-bar {
+    width: 1px;
+    text-align: left;
+    transition: 0.9s;
+  }
+  #services {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+  }
+  
+  .section-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .section-header hr {
+    width: 50px;
+    height: 3px;
+    background-color: #001633;
+    margin: 0 auto 20px;
+  }
+  
+  /*salanagi color */
+  .section-header p {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #000052ef;
+    text-align: left!important; 
+    margin-bottom: 5px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+.title-large {
+    font-size: 240px;
+    font-weight: bold;
+  }
+   
+  .description-small {
+    font-size: 16px;
+  }  
+  .description {
+    font-size: 16px;
+    color: #888;
+    margin-top: 10px;
+  }
+
+  #servicesj {
+    padding: 60px 0;
+    background-color: #d8d8d8;
+   
+  }
+  
+    #servicesj .descriptionj {
+    font-size: 16px;
+    color: #b31616;
+    margin-top: 10px;
+    text-align: left !important;
+    align-self: left;
+  } 
+   .icon {
+    font-size: 48px;
+    color: #070044;
+  }
+  

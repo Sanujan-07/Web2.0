@@ -9,7 +9,7 @@ const Fintech = () => {
     <>
       <Header />
       <div className="section">
-        <h1>Fintech Services And Solutions</h1>
+        <h1 className="Iyconnect1">Fintech Services And Solutions</h1>
 
         <br></br>
         <hr></hr>

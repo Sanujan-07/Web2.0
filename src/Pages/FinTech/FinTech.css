@@ -153,13 +153,9 @@
 /* Article Headings */
 
 .article .h1,
-.article h2,
 .article .h2,
-.article h3,
 .article .h3,
 .article h4,
-.article .h4,
-.article h5,
 .article .h5 {
   color: #000;
   margin-top: 30px;
@@ -238,3 +234,10 @@ img.Raja {
   text-align: left !important;
 }
 
+.Iyconnect1{
+  margin-top: 0;
+  margin-left: 115px;
+  
+  
+}
+ 
