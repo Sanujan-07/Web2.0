@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <ImageSlider title={"IYKCONS"} />
+      <ImageSlider title={"IYKONS"} />
       {/* #intro */}
       {/*==========================
 Facts Section
