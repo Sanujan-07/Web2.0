@@ -26,16 +26,21 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 .page-head3 {
+  text-align: center;
+  padding: 230px 0px 150px 0px;
+  color: #fff;
+  margin-top: 120px;
+  position: relative; /* Needed for z-index */
+}
 
-	text-align: center;
-	background-image: url(../image/aboutus.png) ;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 230px 0px 150px 0px;
-	color: #fff;
-    margin-top: 120px;
-   
+#bg-video3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Behind other content */
 }
 
 .page-head3 h1 {

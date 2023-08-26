@@ -68,7 +68,7 @@ Facts Section
                 </h6>
               </div>
               <div className="image-content">
-                <img src={image1} alt="" />
+                <img src={image1} alt="" className="img-fluid" />
               </div>
             </div>
             <div className="facts-img"></div>
@@ -176,7 +176,7 @@ About Us Section
             <div className="col-md-6 wow fadeInUp">
               <div className="about-col">
                 <div className="img">
-                  <img src={aboutplan} alt="" />
+                  <img src={aboutplan} alt="" className="img-fluid" />
                 </div>
                 <h2 className="title">
                   <Link to="/Iykonnect">IYCONNECT</Link>
@@ -194,7 +194,7 @@ About Us Section
             <div className="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div className="about-col">
                 <div className="img">
-                  <img src={aboutmisson} alt="" />
+                  <img src={aboutmisson} alt="" className="img-fluid" />
                 </div>
                 <h2 className="title">
                   <Link to="/Fantach">IYKONS Fintech </Link>

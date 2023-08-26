@@ -13,31 +13,38 @@ import about_9 from "../image/image/MTD.jpg";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import SendMessage from "../SendMessaage/SendMessage";
+import video from "../image/Video/Tech.mp4";
 export default function AccountandFinance() {
   return (
     <>
       <Header />
 
-      <div class="page-head1 header-text">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1>Accounting & Finance</h1>
-              <span>
-                Account management gives an essential insight into the heart of
-                the company, how it is operating, where it may be struggling,
-                and even where the next big opportunity may lie. Management
-                accounting is the activity of identifying, analysing,
-                evaluating, and conveying essential financial information to
-                decision-makers, in order to assist them in making the best
-                strategic decisions for the business. We can prepare management
-                accounts on a weekly, monthly, quarterly, bi-annual, or annual
-                basis.
-              </span>
+      <section className="imagerow">
+        <div className="page-head1 header-text">
+          <video autoPlay muted loop id="bg-video1">
+            <source src={video} type="video/mp4" />
+            {/* Add additional source elements for other video formats */}
+          </video>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h1>Accounting & Finance</h1>
+                <span>
+                  Account management gives an essential insight into the heart
+                  of the company, how it is operating, where it may be
+                  struggling, and even where the next big opportunity may lie.
+                  Management accounting is the activity of identifying,
+                  analysing, evaluating, and conveying essential financial
+                  information to decision-makers, in order to assist them in
+                  making the best strategic decisions for the business. We can
+                  prepare management accounts on a weekly, monthly, quarterly,
+                  bi-annual, or annual basis.
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div className="perant">
         <div className="body">

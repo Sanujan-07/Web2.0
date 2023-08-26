@@ -12,32 +12,39 @@ import about_8 from "../image/image/Webdevelopment.jpg";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import SendMessage from "../SendMessaage/SendMessage";
+import video from "../image/Video/Tech.mp4";
 export default function DigitalMarketing() {
   return (
     <>
       <Header />
-
-      <div class="page-head header-text">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1>Digital Marketing & Branding</h1>
-              <span>
-                As a website development company, Iykons provides a full suite
-                of digital marketing and branding services that will tell your
-                brand story effectively in this digital world. We create
-                eye-catching designs and quantifiable campaigns that connect
-                your brand with your target customers, increase online sales and
-                promote business success. Do you need assistance with amazing
-                content, SEO, PPC campaigns, SMM services, video marketing, a
-                complete digital marketing strategy, campaign, or something
-                else? Whatever you require, our specialised team of
-                professionals can assist you.
-              </span>
+      <section className="imagerow">
+        <div className="page-head header-text">
+          <video autoPlay muted loop id="bg-video">
+            <source src={video} type="video/mp4" />
+            {/* Add additional source elements for other video formats */}
+            Your browser does not support the video tag.
+          </video>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h1>Digital Marketing & Branding</h1>
+                <span>
+                  As a website development company, Iykons provides a full suite
+                  of digital marketing and branding services that will tell your
+                  brand story effectively in this digital world. We create
+                  eye-catching designs and quantifiable campaigns that connect
+                  your brand with your target customers, increase online sales
+                  and promote business success. Do you need assistance with
+                  amazing content, SEO, PPC campaigns, SMM services, video
+                  marketing, a complete digital marketing strategy, campaign, or
+                  something else? Whatever you require, our specialised team of
+                  professionals can assist you.
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div className="perant">
         <div className="body">

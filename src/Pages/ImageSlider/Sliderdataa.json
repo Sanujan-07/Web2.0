@@ -1,21 +1,25 @@
 {
   "slides": [
-  
     {
+      "type": "image",
       "src": "./SliderImage/C.jpg",
+      "alt": "Image 1 for carousel"
+    },
+    {
+      "type": "image",
+      "src": "./SliderImage/D.jpg",
+      "alt": "Image 2 for carousel"
+    },
+    {
+      "type": "image",
+      "src": "./SliderImage/E.jpg",
       "alt": "Image 3 for carousel"
     },
     {
-      "src": "./SliderImage/D.jpg",
-      "alt": "Image 4 for carousel"
-    },
-    {
-      "src": "./SliderImage/E.jpg",
-      "alt": "Image 4 for carousel"
-    },
-    {
+      "type": "image",
       "src": "./SliderImage/F.jpg",
       "alt": "Image 4 for carousel"
     }
+  
   ]
 }

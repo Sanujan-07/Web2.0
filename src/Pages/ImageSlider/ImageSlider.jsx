@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
-import Silderdata from "./Sliderdataa.json";
+import SliderData from "./Sliderdataa.json";
 import "./Slider.css";
+
 export default function ImageSlider({ title }) {
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
-    setSlide((prevSlide) => (prevSlide + 1) % Silderdata.slides.length);
+    setSlide((prevSlide) => (prevSlide + 1) % SliderData.slides.length);
   };
 
   const prevSlide = () => {
     setSlide(
       (prevSlide) =>
-        (prevSlide - 1 + Silderdata.slides.length) % Silderdata.slides.length
+        (prevSlide - 1 + SliderData.slides.length) % SliderData.slides.length
     );
   };
 
@@ -56,33 +57,47 @@ export default function ImageSlider({ title }) {
           onClick={prevSlide}
           className="arrow arrow-left"
         />
-        {Silderdata.slides.map((item, idx) => {
-          return (
-            <img
-              src={process.env.PUBLIC_URL + item.src}
-              alt={item.alt}
-              key={idx}
-              className={slide === idx ? "slide" : "slide slide-hidden"}
-            />
-          );
+        {SliderData.slides.map((item, idx) => {
+          if (item.type === "image") {
+            return (
+              <img
+                src={process.env.PUBLIC_URL + item.src}
+                alt={item.alt}
+                key={idx}
+                className={slide === idx ? "slide" : "slide slide-hidden"}
+              />
+            );
+          } else if (item.type === "video") {
+            return (
+              <video
+                autoPlay
+                muted
+                loop
+                src={process.env.PUBLIC_URL + item.src}
+                poster={process.env.PUBLIC_URL + item.poster}
+                alt={item.alt}
+                key={idx}
+                className={slide === idx ? "slide" : "slide slide-hidden"}
+                controls
+              />
+            );
+          }
+          return null; // Handle other types or unsupported types if needed
         })}
-
         <BsArrowRightCircleFill
           onClick={nextSlide}
           className="arrow arrow-right"
         />
         <span className="indicators">
-          {Silderdata.slides.map((_, idx) => {
-            return (
-              <button
-                key={idx}
-                className={
-                  slide === idx ? "indicator" : "indicator indicator-inactive"
-                }
-                onClick={() => setSlide(idx)}
-              ></button>
-            );
-          })}
+          {SliderData.slides.map((_, idx) => (
+            <button
+              key={idx}
+              className={
+                slide === idx ? "indicator" : "indicator indicator-inactive"
+              }
+              onClick={() => setSlide(idx)}
+            ></button>
+          ))}
         </span>
       </div>
     </section>
