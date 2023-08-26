@@ -5,17 +5,29 @@ import myImage1 from "../image/iykons.jpg";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SendMessage from "../SendMessaage/SendMessage";
-import video from "../image/Video/Tech.mp4";
+
 export default function Aboutus() {
   return (
     <>
       <Header />
 
       <section className="imagerow">
+        <div class="page-head3 header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1>About us</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* 
+      <section className="imagerow">
         <div className="page-head4 header-text">
           <video autoPlay muted loop id="bg-video4">
             <source src={video} type="video/mp4" />
-            {/* Add additional source elements for other video formats */}
+            {/* Add additional source elements for other video formats }
             Your browser does not support the video tag.
           </video>
           <div className="container">
@@ -28,7 +40,7 @@ export default function Aboutus() {
           </div>
         </div>
       </section>
-
+    */}
       <main id="main">
         {/*set one */}
 

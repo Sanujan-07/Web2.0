@@ -8,17 +8,15 @@ import about_4 from "../image/image/selfevaluation.jpg";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SendMessage from "../SendMessaage/SendMessage";
-import video from "../image/Video/Tech.mp4";
 export default function BusinesSupportConsultation() {
   return (
     <>
       <Header />
-
-      <section className="imagerow">
+      {/*<section className="imagerow">
         <div className="page-head4 header-text">
           <video autoPlay muted loop id="bg-video4">
             <source src={video} type="video/mp4" />
-            {/* Add additional source elements for other video formats */}
+            {/* Add additional source elements for other video formats }
             Your browser does not support the video tag.
           </video>
           <div className="container">
@@ -36,7 +34,23 @@ export default function BusinesSupportConsultation() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <div class="page-head4 header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Busines Support & Consultation</h1>
+              <span>
+                IYKONS’ consulting services help focus on your most significant
+                opportunities and challenges, i.e. operational, strategic,
+                digital marketing, etc We specialise in offering our business
+                support services to SMEs and help take their business to the
+                next level.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="perant">
         <div className="body">

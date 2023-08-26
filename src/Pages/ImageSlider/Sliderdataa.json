@@ -1,5 +1,12 @@
 {
   "slides": [
+    
+    {
+      "type": "video",
+      "src": "./SliderImage/Tech.mp4",
+      "poster": "./SliderVideo/Tech.jpg",
+      "alt": "Video for carousel"
+    },
     {
       "type": "image",
       "src": "./SliderImage/C.jpg",
@@ -18,8 +25,7 @@
     {
       "type": "image",
       "src": "./SliderImage/F.jpg",
-      "alt": "Image 4 for carousel"
+      "alt": "Image 4for carousel"
     }
-  
   ]
 }

@@ -12,16 +12,15 @@ import about_8 from "../image/image/Webdevelopment.jpg";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import SendMessage from "../SendMessaage/SendMessage";
-import video from "../image/Video/Tech.mp4";
 export default function DigitalMarketing() {
   return (
     <>
       <Header />
-      <section className="imagerow">
+      {/**<section className="imagerow">
         <div className="page-head header-text">
           <video autoPlay muted loop id="bg-video">
             <source src={video} type="video/mp4" />
-            {/* Add additional source elements for other video formats */}
+            {/* Add additional source elements for other video formats }
             Your browser does not support the video tag.
           </video>
           <div className="container">
@@ -45,13 +44,36 @@ export default function DigitalMarketing() {
           </div>
         </div>
       </section>
+ */}
+
+      <div class="page-head header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Digital Marketing & Branding</h1>
+              <span>
+                As a website development company, Iykons provides a full suite
+                of digital marketing and branding services that will tell your
+                brand story effectively in this digital world. We create
+                eye-catching designs and quantifiable campaigns that connect
+                your brand with your target customers, increase online sales and
+                promote business success. Do you need assistance with amazing
+                content, SEO, PPC campaigns, SMM services, video marketing, a
+                complete digital marketing strategy, campaign, or something
+                else? Whatever you require, our specialised team of
+                professionals can assist you.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="perant">
         <div className="body">
           <div class="container1">
             <div class="card">
               <div class="imgBx">
-                <img src={about_1} />
+                <img src={about_1} alt="image 1" />
               </div>
               <div class="content">
                 <h2 className="h2">Search Engine Optimization</h2>
@@ -64,7 +86,7 @@ export default function DigitalMarketing() {
             </div>
             <div class="card">
               <div class="imgBx">
-                <img src={about_2} />
+                <img src={about_2} alt="image 2" />
               </div>
               <div class="content">
                 <h2 className="h2">Search Engine Marketing</h2>
@@ -77,7 +99,7 @@ export default function DigitalMarketing() {
             </div>
             <div class="card">
               <div class="imgBx">
-                <img src={about_3} />
+                <img src={about_3} alt="image 3" />
               </div>
               <div class="content">
                 <h2 className="h2">Social Media Marketing</h2>
@@ -91,7 +113,7 @@ export default function DigitalMarketing() {
 
             <div class="card">
               <div class="imgBx">
-                <img src={about_4} />
+                <img src={about_4} alt="image 4" />
               </div>
               <div class="content">
                 <h2 className="h2">Conversion Rate Optimization</h2>
@@ -104,7 +126,7 @@ export default function DigitalMarketing() {
             </div>
             <div class="card">
               <div class="imgBx">
-                <img src={about_5} />
+                <img src={about_5} alt="image 5" />
               </div>
               <div class="content">
                 <h2 className="h2">Online Reputation Management</h2>
@@ -118,7 +140,7 @@ export default function DigitalMarketing() {
             </div>
             <div class="card">
               <div class="imgBx">
-                <img src={about_6} />
+                <img src={about_6} alt="image 6" />
               </div>
               <div class="content">
                 <h2 className="h2">Pay Per Click </h2>
@@ -131,7 +153,7 @@ export default function DigitalMarketing() {
             </div>
             <div class="card">
               <div class="imgBx">
-                <img src={about_7} />
+                <img src={about_7} alt="image 7" />
               </div>
               <div class="content">
                 <h2 className="h2">Website Design</h2>
@@ -148,7 +170,7 @@ export default function DigitalMarketing() {
 
             <div class="card">
               <div class="imgBx">
-                <img src={about_8} />
+                <img src={about_8} alt="image 8" />
               </div>
               <div class="content">
                 <h2 className="h2">Web Development</h2>

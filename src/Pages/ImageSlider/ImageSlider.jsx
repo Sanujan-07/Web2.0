@@ -20,7 +20,7 @@ export default function ImageSlider({ title }) {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 7000);
 
     return () => {
       clearInterval(interval);
@@ -78,7 +78,6 @@ export default function ImageSlider({ title }) {
                 alt={item.alt}
                 key={idx}
                 className={slide === idx ? "slide" : "slide slide-hidden"}
-                controls
               />
             );
           }
