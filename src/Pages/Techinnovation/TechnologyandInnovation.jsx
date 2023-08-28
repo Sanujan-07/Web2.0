@@ -8,17 +8,17 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SendMessage from "../SendMessaage/SendMessage";
 import { Link } from "react-router-dom";
-//import video from "../image/Video/Tech.mp4";
+import video from "../Video/Tech.mp4";
 export default function TechnologyandInnovation() {
   return (
     <>
       <Header />
 
-      {/*<section className="imagerow">
+      <section className="imagerow">
         <div className="page-head2 header-text">
-          <video autoPlay muted loop id="bg-video">
+          <video autoPlay muted loop id="bg-video2">
             <source src={video} type="video/mp4" />
-            {/* Add additional source elements for other video formats }
+            {/* Add additional source elements for other video formats**/}
             Your browser does not support the video tag.
           </video>
           <div className="container">
@@ -29,17 +29,7 @@ export default function TechnologyandInnovation() {
             </div>
           </div>
         </div>
-  </section>*/}
-      <div class="page-head2 header-text">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1>Technology & Innovation</h1>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <section className="body">
         <div class="card1">
