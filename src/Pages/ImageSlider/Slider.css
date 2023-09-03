@@ -31,7 +31,7 @@
     filter: drop-shadow(0px 0px 5px #555);
     width: 2rem;
     height: 2rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.582);
   }
   
   .arrow:hover {
@@ -55,7 +55,7 @@
   .indicator {
     background-color: white;
     height: 0.5rem;
-    width: 0.5rem;
+    width: 0.10rem;
     border-radius: 100%;
     border: none;
     outline: none;
@@ -109,23 +109,25 @@
   }
   
   /* Media query for mobile devices */
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     #intro h1 {
       font-size: 100px; /* Adjust font size for mobile */
        /* Adjust margin for mobile */
     }
   .slide{
-    width : 500px ;
+    width : 700px ;
     height: 500px ;
     margin:0 2px 0 2px;
   }
   video{
-    width : 500px ;
+    width : 700px ;
     height: 500px ;
     margin:0 2px 0 2px;
   }
    
   }
+
+ 
   /* Media query for tablet devices */
   @media (min-width: 768px) and (max-width: 1023px) {
     #intro h1 {

@@ -10,7 +10,7 @@ import "../assets/vendor/remixicon/remixicon.css";
 import "../assets/vendor/swiper/swiper-bundle.min.css";
 import "../css/Footer.css";
 import { Link } from "react-router-dom";
-import Privacy from "../Home/Privacy";
+
 export default function Footer() {
   return (
     <>
@@ -33,6 +33,7 @@ export default function Footer() {
                   </p>
                   <div className="social-links mt-3">
                     <a
+                      rel="noreferrer"
                       target="_blank"
                       href="https://www.tiktok.com/@iykons.uk?lang=en"
                       className="twitter"
@@ -40,6 +41,7 @@ export default function Footer() {
                       <i className="bx bxl-twitter" />
                     </a>
                     <a
+                      rel="noreferrer"
                       target="_blank"
                       href="https://www.facebook.com/iykons/"
                       className="facebook"
@@ -47,6 +49,7 @@ export default function Footer() {
                       <i className="bx bxl-facebook" />
                     </a>
                     <a
+                      rel="noreferrer"
                       target="_blank"
                       href="https://www.instagram.com/iykon.uk/"
                       className="instagram"
@@ -54,6 +57,7 @@ export default function Footer() {
                       <i className="bx bxl-instagram" />
                     </a>
                     <a
+                      rel="noreferrer"
                       target="_blank"
                       href="https://www.linkedin.com/company/iykons-ltd/"
                       className="linkedin"
@@ -61,6 +65,7 @@ export default function Footer() {
                       <i className="bx bxl-linkedin" />
                     </a>
                     <a
+                      rel="noreferrer"
                       target="_blank"
                       href="https://www.tiktok.com/@iykons.uk?lang=en"
                       className="google-plus"

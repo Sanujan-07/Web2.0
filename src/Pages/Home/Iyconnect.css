@@ -1,162 +1,209 @@
-   /* image slider*/
-   .Iyconnect{
-    margin-top: 130px;
-    margin-left: 50px;
-    
-    text-align: center;
-  }  
-  
-#facts {
-    background: url(./img/facts-bg.jpg) center top no-repeat fixed;
-    background-size: cover;
-    padding: 60px 0 0 0;
-    position: relative;
-  }
-  
-  
-  
-  #facts::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.88);
-    z-index: 9;
-  }
-  
-  #facts .container {
-    position: relative;
-    z-index: 10;
-  }
-  
-  #facts .counters span {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 48px;
-    display: block;
-    color: #18d26e;
-  }
-  
-  
-  
-  #facts .counters p {
-    padding: 0;
-    margin: 0 0 20px 0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    color: #00000070 !important;
-    
-  }
-  
-  #facts .facts-img {
-    text-align: center;
-    padding-top: 30px;
-  }
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+}
 
-    .text-content h1,
-  .text-content h6,
-  .text-content p,
-  .text-content{
-    margin: 0;
-    padding: 0;
-  }
-  
-  .text-content p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-    #skills {
-    padding: 60px 0;
-  }
-  
-  #skills .progress {
-    height: 35px;
-    margin-bottom: 10px;
-  }
-  
-  #skills .progress .skill {
-    font-family: "Open Sans", sans-serif;
-    line-height: 35px;
-    padding: 0;
-    margin: 0 0 0 20px;
-    text-transform: uppercase;
-  }
-  
-  #skills .progress .skill .val {
-    float: right;
-    font-style: normal;
-    margin: 0 20px 0 0;
-  }
-  
-  #skills .progress-bar {
-    width: 1px;
-    text-align: left;
-    transition: 0.9s;
-  }
-  #services {
-    padding: 60px 0;
-    background-color: #f7f7f7;
-  }
-  
-  .section-header h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .section-header hr {
-    width: 50px;
-    height: 3px;
-    background-color: #001633;
-    margin: 0 auto 20px;
-  }
-  
-  /*salanagi color */
-  .section-header p {
-    font-size: 18px;
-    font-weight: bolder;
-    color: #000052ef;
-    text-align: left!important; 
-    margin-bottom: 5px;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -10px;
-  }
-  
-.title-large {
-    font-size: 240px;
-    font-weight: bold;
-  }
-   
-  .description-small {
-    font-size: 16px;
-  }  
-  .description {
-    font-size: 16px;
-    color: #888;
-    margin-top: 10px;
-  }
+.imagerow1{
+  margin-top: 100px;
+}
 
-  #servicesj {
-    padding: 60px 0;
-    background-color: #d8d8d8;
+.page-head6 {
+  text-align: center;
+	background-image: url(../image/IY.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 230px 0px 150px 0px;
+	color: #fff;
+ 
+}
+
+#bg-video6 {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ z-index: -1; /* Behind other content */
+}
+
+.page-head6 h1 {
+text-transform: capitalize;
+font-size: 40px;
+font-weight: 700;
+letter-spacing: 2px;
+margin-bottom: 18px;
+  color: #ffffff !important;
+  text-align: center;
+  justify-content: center;
+}
+
+.page-head6 span {
+font-size: 15px;
+text-transform: capitalize;
+letter-spacing: 1px;
+color: #fff;
+display: block;
+
+
+}
+
+@media (max-width: 991.98px) {
+  .bg-hero {
+      background-size: cover;
+  }
+}
+
+.bg-quote {
+ 
+  background-size: contain;
+}
+
+@media (max-width: 991.98px) {
+  .bg-quote {
+      background-size: cover;
+  }
+}
+
+.section{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body1{
+  margin-top: 0;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  Flex-wrap: wrap;
+}
+
+.cardC{
+  top:30px;
+  display: inline-block;
+  width:520px;
+  height: 510px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 6px solid #bdbbbb;
+  position:relative ;
+  margin-right: 50px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.cardC-img{
+  width: 100%;
+  height: 700px;
+  object-fit: cover ;
+  border-radius: 15px;
+}
+
+.cardC-body{
+  width:100%;
+  height: 100%;
+  top:0;
+  right: -100%;
+  position: absolute;
+  background: #1f3d4762;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color:#fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  
+  transition: 2s;
+}
+.cardC-body ul{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.cardC:hover .cardC-body{
+  right: 0;
+}
+.cardC-title{
+  text-transform:uppercase ;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.cardC-img-title {
+  position: absolute; /* Position absolutely within the container */
+  top: 50%; /* Position vertically at the center */
+  left: 45%; /* Position horizontally at the center */
+  transform: translate(-50%, -50%); /* Center the title precisely */
+  margin-left: 20px; /* mrSemi-transparent background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for the title */
+  width: 450px;
+  margin-left: 15px;
+  font-size: 22px; /* Font size for the title */
+  font-weight: bold; /* Bold text */
+  opacity: 1; /* Initially visible */
+  transition: opacity 0.3s ease; /* Add a smooth transition */
+  visibility:  visible;
+  text-align: center;
+}
+.cardC-img:hover .cardC-img-title{
+  opacity: 0;
+  visibility: hidden;
+}
+.cardC-sub-title{
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
+}
+.cardC.info{
+ font-size: 16px; 
+ line-height: 25px;
+ margin: 40px 0 30px 0;
+ font-weight: 300;
+ 
+}
+
+
+.cardC-btn1{
+  color:#ffffff;
+  border-color:2px solid #fff;
+  width: 180px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform:capitalize ;
+  background:none;
+  outline: none;
+  font-weight:500 ;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 160px;
+}
+.cardC-btn1:hover{
+  background: #0982c4;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .cardC {
+    width: 475px; /* Set cardC width to 100% for mobile */
+    margin-right: 0; /* Remove right margin for mobile */
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+    height: 520px;
    
   }
-  
-    #servicesj .descriptionj {
-    font-size: 16px;
-    color: #b31616;
-    margin-top: 10px;
-    text-align: left !important;
-    align-self: left;
-  } 
-   .icon {
-    font-size: 48px;
-    color: #070044;
+  .body1{
+      flex-direction: column;
   }
-  
+  .cardC-img{
+      height: 720px;
+  }
+}

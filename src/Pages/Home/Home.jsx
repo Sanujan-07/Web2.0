@@ -22,7 +22,8 @@ export default function Home() {
       {/* #intro */}
       {/*==========================
 Facts Section
-    ============================*/}
+  
+  ============================*/}
       <section id="facts" className="wow fadeIn">
         <div className="container">
           <header className="section-header">
@@ -172,11 +173,11 @@ About Us Section
               <br />
             </p>
           </header>
-          <div className="row about-cols">
+          <div className="row ">
             <div className="col-md-6 wow fadeInUp">
-              <div className="about-col">
+              <div className="about-col1">
                 <div className="img">
-                  <img src={aboutplan} alt="" className="img-fluid" />
+                  <img src={aboutplan} alt="" className="img-fluid1" />
                 </div>
                 <h2 className="title">
                   <Link to="/Iykonnect">IYCONNECT</Link>
@@ -192,9 +193,9 @@ About Us Section
               </div>
             </div>
             <div className="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div className="about-col">
+              <div className="about-col1">
                 <div className="img">
-                  <img src={aboutmisson} alt="" className="img-fluid" />
+                  <img src={aboutmisson} alt="" className="img-fluid1" />
                 </div>
                 <h2 className="title">
                   <Link to="/Fantach">IYKONS Fintech </Link>

@@ -1,16 +1,13 @@
 import React from "react";
-
 import "../css/Aboutus.css";
 import myImage1 from "../image/iykons.jpg";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SendMessage from "../SendMessaage/SendMessage";
-
 export default function Aboutus() {
   return (
     <>
       <Header />
-
       <section className="imagerow">
         <div class="page-head3 header-text">
           <div class="container">

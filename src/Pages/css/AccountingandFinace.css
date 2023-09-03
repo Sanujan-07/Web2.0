@@ -30,7 +30,7 @@
 .page-head1 span {
    text-align: justify !important;
 	font-size: 15px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 1px;
 	color: #fff;
 	display: block;

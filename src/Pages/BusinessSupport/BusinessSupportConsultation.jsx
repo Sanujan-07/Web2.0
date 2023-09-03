@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./BSC.css";
 import about_1 from "../image/image/prepareacccount.jpg";
 import about_2 from "../image/image/Bookkeeping.jpg";
@@ -9,6 +8,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import SendMessage from "../SendMessaage/SendMessage";
 import video from "../Video/BusinessSupport.mp4";
+
 export default function BusinesSupportConsultation() {
   return (
     <>
@@ -39,12 +39,15 @@ export default function BusinesSupportConsultation() {
         </div>
       </section>
 
-      <div className="perant">
-        <div className="body">
-          <div class="container1">
+      <div className="perant1">
+        <div className="body1">
+          <div class="container6">
             <div class="card">
               <div class="imgBx">
-                <img src={about_1} alt="Image 1" />
+                <img
+                  src={about_1}
+                  alt="A scene from our latest product launch event"
+                />
               </div>
               <div class="content">
                 <h2>Creating a Business</h2>
@@ -69,7 +72,10 @@ export default function BusinesSupportConsultation() {
             </div>
             <div class="card">
               <div class="imgBx">
-                <img src={about_2} alt="Image 2" />
+                <img
+                  src={about_2}
+                  alt="Preparation of a Business Plan launch event"
+                />
               </div>
               <div class="content">
                 <h2>Preparation of a Business Plan</h2>
@@ -93,7 +99,7 @@ export default function BusinesSupportConsultation() {
             </div>
             <div class="card">
               <div class="imgBx">
-                <img src={about_3} alt="Image 3" />
+                <img src={about_3} alt="Postal Service Applications" />
               </div>
               <div class="content">
                 <h2>Postal Service Applications</h2>
@@ -120,7 +126,7 @@ export default function BusinesSupportConsultation() {
 
             <div class="card">
               <div class="imgBx">
-                <img src={about_4} alt="Image 4" />
+                <img src={about_4} alt="Outsourced Business Support" />
               </div>
               <div class="content">
                 <h2>Outsourced Business Support</h2>

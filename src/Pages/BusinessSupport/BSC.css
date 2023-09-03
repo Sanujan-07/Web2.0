@@ -30,7 +30,7 @@
 
 .page-head4 span {
 	font-size: 18px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 1px;
 	color: #000000;
 	display: block;
@@ -42,14 +42,14 @@
     
     background-size: contain;
 }
-.perant{ 
+.perant1{ 
    margin-top: 10px;
    padding: 0;
    box-sizing: border-box; 
    font-family: 'Poppins', sans-serif;
 
 } 
-.body{
+.body1{
    display: flex;
    justify-content: center; 
    align-items: center;
@@ -57,7 +57,7 @@
    background: #fff
 
 }
-.container1{
+.container6{
    position: relative; 
    display: flex;
    justify-content: center; 
@@ -66,7 +66,7 @@
    gap: 100px 50px !important;
    padding: 50px 50px !important;
 }
-.container1 .card
+.container6 .card
 {
    top: 50px;
    bottom: 10px;
@@ -84,12 +84,12 @@
 }
 
 
-.container1 .card:hover{
+.container6 .card:hover{
    height: 400px; ;
 }
 
 
-.container1 .card .imgBx{
+.container6 .card .imgBx{
    align-self: center;
    position: absolute;
    top: 20px;
@@ -101,13 +101,13 @@
    transition: 0.5s;
 }
 
-.container1 .card:hover .imgBx
+.container6 .card:hover .imgBx
 {
    top: -100px; 
    scale: 0.75;
    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
 }
-.container1 .card .imgBx img{
+.container6 .card .imgBx img{
    position: absolute;
    top: 0;
    left: 0;
@@ -115,7 +115,7 @@
    height: 100%;
    object-fit: cover;
 }
-.container1 .card .content{
+.container6 .card .content{
    position: absolute;
    top: 280px ;
    width: 100%;
@@ -125,17 +125,17 @@
    text-align: center;
    transition: 0.5s;
 }
-.container1 .card:hover .content{
+.container6 .card:hover .content{
    top:130px ;
    height: 250px;
 
 }
-.container1 .card .content h2{
+.container6 .card .content h2{
    font-size: 1.5em;
    font-weight: 700;
    color:#106EEA;
 }
-.container1 .card .content p{
+.container6 .card .content p{
    top:15px;
    color: #333;
    font-size: 1.05em;
